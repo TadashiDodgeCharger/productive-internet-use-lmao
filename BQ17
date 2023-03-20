@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("mySelect").value;
+      document.getElementById("grade").innerHTML = "You are in: " + x + " year";
+    }
+    </script>
+
+</head>
+<body>
+
+ <p> 17. Which JavaScript object can be affected by the onchange event handler as value changes? </p>
+
+    <p>Pick a grade from the list.</p>
+
+    <select id="mySelect" onchange="myFunction()">
+      <option value="Freshman">9th</option>
+      <option value="Sophomore">10th</option>
+      <option value="Junior">11th</option>
+      <option value="Senior">12th</option>
+    </select>
+    
+    <p id="grade"></p>
+
+    <p>The answer is B) select. When you select a grade, a function is triggered which outputs the value of the grade.</p>
+  
+    
+</body>
+</html>
